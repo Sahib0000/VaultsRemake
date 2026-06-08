@@ -1,0 +1,6 @@
+name: VaultsRemake
+version: 1.0
+main: net.carnagepvp.vaultsremake.VaultsPlugin
+api-version: 1.8
+description: Standalone Vaults Plugin Remake
+author: CarnagePVP

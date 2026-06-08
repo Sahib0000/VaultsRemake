@@ -1,0 +1,111 @@
+mongo:
+  # The address of the MongoDB server
+  address: localhost
+  # The port of the MongoDB server
+  port: 27017
+  # The database to use
+  database: vaults_remake
+  # The username for MongoDB authentication
+  username: ''
+  # The password for MongoDB authentication
+  password: ''
+  # The authentication database to use
+  auth-database: vaults_remake
+
+# The default maximum number of vaults a player can have
+default-max-vaults: 1
+
+# The list of items that are not allowed in vaults
+blacklisted-items:
+- BEDROCK
+- BARRIER
+
+permissions:
+  # The permission for administrative actions
+  admin: vaultsremake.admin
+
+messages:
+  # The prefix for all plugin messages
+  prefix: '&b&lVaults'
+  # Message sent when a player doesn't have permission
+  no-permission: '&cYou do not have permission to do this.'
+  # Message sent when the database is not connected
+  database-not-connected: '&cThe database is not currently connected. Please try again later.'
+  # Message sent when vaults fail to load
+  vault-load-failed: '&cFailed to load your vaults. Please contact an administrator.'
+  # Message sent when an error occurs during vault loading
+  vault-load-error: '&cAn error occurred while loading your vaults. Please contact an administrator.'
+  # Message sent when an invalid vault number is provided
+  invalid-vault-number: '&cInvalid vault number.'
+  # Message sent when a target player is not found
+  player-not-found: '&cPlayer ''{0}'' not found.'
+  # Message sent when a player tries to open another player's vault without permission
+  no-permission-other: '&cYou do not have permission to open other players vaults.'
+  # Message sent when searching vaults
+  searching: '&7Searching your vaults for &f{0}&7...'
+  # Message sent when searching another player's vaults
+  searching-other: '&7Searching &f{0}''s &7vaults for &f{1}&7...'
+  # The format for usage messages
+  usage-format: '&bUsage: &f{0}'
+  # Message sent when loading a vault
+  loading-vault: '&7Loading vault #{0}...'
+  # Message sent when loading another player's vault
+  loading-vault-other: '&7Loading vault #{0} for {1}...'
+  # Message sent when reverting a vault
+  reverting-vault: '&7Reverting vault #{0} for &f{1}&7...'
+  # Message sent when a vault is successfully reverted
+  revert-success: '&aSuccessfully reverted vault #{0} for &f{1}&a.'
+  # Message sent when deleting a vault
+  deleting-vault: '&7Deleting vault #{0} for &f{1}&7...'
+  # Message sent when a vault is successfully deleted
+  delete-success: '&aSuccessfully deleted vault #{0} for &f{1}&a.'
+  # Message sent when deleting all vaults for a player
+  deleting-all-vaults: '&7Deleting all vaults for &f{0}&7...'
+  # Message sent when all vaults for a player are successfully deleted
+  delete-all-success: '&aSuccessfully deleted all vaults for &f{0}&a.'
+  # Message sent when purging the database
+  purging-database: '&c&lWARNING! &7Purging the full database... Run the command again to confirm.'
+  # Message sent when the database is successfully purged
+  purge-success: '&aSuccessfully purged the full database.'
+  # Message sent when a player is not authorized (e.g. not OP)
+  not-authorized: '&cYou are not authorized to use this command.'
+  # Message sent when a view token is invalid or expired
+  invalid-view-token: '&cInvalid or expired vault view token.'
+  # Message sent when a player doesn't have permission to access a specific vault number
+  no-permission-vault: '&cYou do not have permission to access vault #{0}.'
+  # Warning message before deleting a vault
+  deleting-vault-warning: '&c&lWARNING! &7You are about to delete vault #{0} for &f{1}&7. Run the command again to confirm.'
+  # Warning message before deleting all vaults for a player
+  deleting-all-vaults-warning: '&c&lWARNING! &7You are about to delete ALL vaults for &f{0}&7. Run the command again to confirm.'
+  # Message sent when fetching backups
+  fetching-backups: '&7Fetching backup history for &f{0} &7vault #{1}...'
+  # Message sent when no backups are found
+  no-backups-found: '&cNo backups found for &f{0} &cvault #{1}.'
+  # Message sent when a view token is invalid or expired
+  invalid-view-token-expired: '&cInvalid or expired vault view token.'
+  # Message sent when /pv view is used directly
+  view-only-link: '&cThis command can only be used by clicking a vault link in chat.'
+  # The title for the vault GUI
+  gui-title: '&b&lVault &f#{0}'
+  # The title for the vault GUI in read-only mode
+  gui-title-read-only: '&b&lVault &f#{0} &7(Read-Only)'
+  # Message sent when trying to put a blacklisted item in a vault
+  blacklisted-item: '&cYou cannot put &f{0} &cin the vault!'
+  # Message sent when no search results are found
+  search-no-results: '&cNo items found matching ''{0}'' in {1} vaults.'
+  # Message sent when a snapshot fails to load
+  snapshot-load-failed: '&cFailed to load snapshot data.'
+  # Message sent when a snapshot is successfully restored
+  snapshot-restore-success: '&aSuccessfully restored vault #{0} for &f{1} &afrom snapshot: &f{2}&a.'
+  # Message sent when a vault icon is updated
+  vault-icon-updated: '&aVault #{0} icon updated!'
+  # The title for the vault selector GUI
+  selector-title: '&b&lYour Vaults'
+  # The display name for a vault item in the selector GUI
+  vault-item-name: '&bVault #{0}'
+  # The title for the search results GUI
+  search-title: '&b&lSearch Results: &f{0}'
+  # The title for the backup history GUI
+  backup-history-title: '&b&lBackup History: &f{0} #{1}'
+  # The title for the material selector GUI
+  material-selector-title: '&b&lPV Material Selector'
