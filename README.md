@@ -15,7 +15,7 @@ VaultsRemake is a custom player vault plugin for the upcoming release of Carnage
 
 ## 🛠 Installation
 
-1. Download the `VaultsRemake.jar`.
+1. Download the latest `VaultsRemake.jar` from the [Releases](https://github.com/carnage-pvp/VaultsRemake/releases) page. (Note: Replace this URL with your actual repository URL if it differs).
 2. Place it in your server's `plugins` folder.
 3. Restart your server to generate the default configuration.
 4. Configure your MongoDB connection in `plugins/VaultsRemake/config.yml`.

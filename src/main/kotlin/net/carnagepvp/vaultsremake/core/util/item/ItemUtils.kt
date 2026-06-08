@@ -1,10 +1,7 @@
 package net.carnagepvp.vaultsremake.core.util.item
 
-import net.minecraft.server.v1_8_R3.NBTTagCompound
-import net.minecraft.server.v1_8_R3.NBTTagList
 import org.apache.commons.lang.StringUtils
 import org.bukkit.Material
-import org.bukkit.craftbukkit.v1_8_R3.inventory.CraftItemStack
 import org.bukkit.inventory.Inventory
 import org.bukkit.inventory.ItemStack
 
@@ -36,23 +33,6 @@ object ItemUtils {
         }
 
         return moved
-    }
-
-    fun addGlow(item: ItemStack): ItemStack {
-        if (item.type == Material.AIR) return item
-
-        val nmsStack = CraftItemStack.asNMSCopy(item) ?: return item
-
-        val tag = if (nmsStack.hasTag()) {
-            nmsStack.tag
-        } else {
-            NBTTagCompound().also(nmsStack::setTag)
-        }
-
-        tag.set("ench", NBTTagList())
-        nmsStack.tag = tag
-
-        return CraftItemStack.asCraftMirror(nmsStack)
     }
 
      fun isSimilar(item: ItemStack, other: ItemStack): Boolean {
